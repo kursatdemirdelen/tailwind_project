@@ -1,17 +1,17 @@
- :root {
-     --main-color: #3A0CA3;
-     --main-hover: #4361EE4D;
-     --title-text: #4361EE;
- }
+:root {
+    --main-color: #3A0CA3;
+    --main-hover: #4361EE4D;
+    --title-text: #4361EE;
+}
 
- .bg-main {
-     background-color: var(--main-color);
- }
+.bg-main {
+    background-color: var(--main-color);
+}
 
- .hover-main {
-     background-color: var(--main-hover);
- }
+.hover-main {
+    background-color: var(--main-hover);
+}
 
- .title-text {
-     color: var(--title-text);
- }
+.title-text {
+    color: var(--title-text);
+}
