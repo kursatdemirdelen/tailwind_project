@@ -24,6 +24,7 @@
           },
           textColor: {
             main: "var(--main-color)",
+            title: "var(--title-text)",
           },
         },
       },
@@ -33,14 +34,14 @@
 
   <body class="font-sans" style="font-family: 'Poppins', sans-serif">
     <div
-      class="h-10 bg-main text-white text-[13.3px] font-light flex justify-between items-center px-[100px] border-b border-gray-300 border-opacity-20">
+      class="h-10 bg-main text-white text-[13.3px] font-light flex justify-between items-center px-4 md:px-[100px] border-b border-gray-300 border-opacity-20">
       <div class="flex items-center">
         <img src="public/icons/location.svg" alt="Location"
           class="w-4 h-4 mr-2" />
         <p>Lorem Ipsum has been the industry's standard dummy</p>
       </div>
 
-      <div class="flex items-center gap-14">
+      <div class="flex items-center gap-4 md:gap-14">
         <span class="flex items-center justify-center">
           <img src="public/icons/tel.svg" alt="tel" class="w-4 h-4 mr-1" />
           +90123 45 67
@@ -52,7 +53,7 @@
       </div>
     </div>
 
-    <div class="relative w-[1440px] h-[902px] rounded-b-full mx-auto" style="
+    <div class="relative max-w-full md:max-w-[1440px] h-[902px] rounded-b-full mx-auto" style="
         background: linear-gradient(
           180deg,
           rgba(76, 201, 240, 0) 0%,
@@ -60,8 +61,8 @@
         );
       ">
       <header class="w-full">
-        <nav class="flex items-center w-full h-20 px-24">
-          <div class="flex items-center gap-8 text-base font-medium">
+        <nav class="flex items-center w-full h-20 px-4 md:px-24">
+          <div class="flex items-center gap-4 text-base font-medium md:gap-8">
             <a href="#"
               class="bg-main-hover w-20 h-[37px] rounded-[30px] pt-[13px] pr-[16px] pb-[13px] pl-[16px] leading-5 text-black inline-flex items-center justify-center gap-2.5">
               Home
@@ -99,12 +100,12 @@
       <div class="flex flex-col min-h-screen">
         <div class="flex-grow">
 
-          <section class="py-20 px-36">
+          <section class="px-4 py-20 md:px-36">
             <div
               class="container flex flex-col items-center gap-8 px-4 mx-auto lg:flex-row">
               <div class="flex flex-col gap-6 lg:w-1/2">
                 <h1
-                  class="text-[19.4px] font-medium leading-[29.1px] tracking-widest title-text">
+                  class="text-[19.4px] font-medium leading-[29.1px] tracking-widest text-title">
                   REAL ESTATE
                 </h1>
 
@@ -123,7 +124,7 @@
                 </div>
 
                 <div
-                  class="rounded-[20px] overflow-hidden relative w-[540px] h-[340px]">
+                  class="rounded-[20px] overflow-hidden relative w-full md:w-[540px] h-[340px]">
                   <div
                     class="absolute left-0 z-10 flex justify-between w-full transform -translate-y-1/2 top-1/2">
                     <div
@@ -161,8 +162,8 @@
               </div>
 
               <div
-                class="w-[420px] bg-white px-10 py-4 rounded-[30px] shadow-md ml-auto">
-                <div class="flex justify-center object-center gap-16">
+                class="w-full md:w-[420px] bg-white px-4 md:px-10 py-4 rounded-[30px] shadow-md ml-auto">
+                <div class="flex justify-center object-center gap-4 md:gap-16">
                   <button
                     class="px-6 py-6 text-base font-medium transition-colors bg-white rounded-full text-main hover:bg-main-hover">
                     For Sale
@@ -176,11 +177,11 @@
 
                 <div class="mb-12 space-y-6">
                   <input type="text" placeholder="New York, San Francisco, etc"
-                    class="px-6 w-[340px] h-[59px] mt-12 rounded-[20px] bg-[#D4D4D433] border border-white text-base font-normal leading-[26px] text-[#AAAAAA] focus:outline-none focus:ring-2 focus:ring-main" />
+                    class="px-6 w-full md:w-[340px] h-[59px] mt-12 rounded-[20px] bg-[#D4D4D433] border border-white text-base font-normal leading-[26px] text-[#AAAAAA] focus:outline-none focus:ring-2 focus:ring-main" />
                   <input type="text" placeholder="Select Property Type"
-                    class="px-6 w-[340px] h-[59px] rounded-[20px] bg-[#D4D4D433] border border-white text-base font-normal leading-[26px] text-[#AAAAAA] focus:outline-none focus:ring-2 focus:ring-main" />
+                    class="px-6 w-full md:w-[340px] h-[59px] rounded-[20px] bg-[#D4D4D433] border border-white text-base font-normal leading-[26px] text-[#AAAAAA] focus:outline-none focus:ring-2 focus:ring-main" />
                   <input type="text" placeholder="Select Rooms"
-                    class="px-6 w-[340px] h-[59px] rounded-[20px] bg-[#D4D4D433] border border-white text-base font-normal leading-[26px] text-[#AAAAAA] focus:outline-none focus:ring-2 focus:ring-main" />
+                    class="px-6 w-full md:w-[340px] h-[59px] rounded-[20px] bg-[#D4D4D433] border border-white text-base font-normal leading-[26px] text-[#AAAAAA] focus:outline-none focus:ring-2 focus:ring-main" />
 
                   <button class="transition-colors text-main">
                     <div class="flex items-center justify-center mb-8">
@@ -190,7 +191,7 @@
                     </div>
                   </button>
                   <button
-                    class="w-[340px] h-[60px] rounded-full border border-main text-main bg-main text-white transition-colors hover:bg-white hover:text-main">
+                    class="w-full md:w-[340px] h-[60px] rounded-full border border-main text-main bg-main text-white transition-colors hover:bg-white hover:text-main">
                     <div class="flex items-center justify-center">
                       <img src="/public/icons/search.svg" alt="search"
                         class="w-5 h-6 mr-3 text-white" /><span>Search</span>
@@ -202,9 +203,9 @@
           </section>
 
           <section>
-            <div class="container flex justify-center gap-[30px] px-6 mx-auto">
+            <div class="container flex flex-col md:flex-row justify-center gap-[30px] px-6 mx-auto">
               <div
-                class="bg-white w-[360px] h-[100px] flex items-center rounded-[50px] px-4"
+                class="bg-white w-full md:w-[360px] h-[100px] flex items-center rounded-[50px] px-4"
                 style="box-shadow: 10px 30px 50px 0px #0000000d">
                 <div class="relative flex items-center gap-2">
                   <div
@@ -252,7 +253,7 @@
               </div>
 
               <div
-                class="bg-white w-[320px] h-[100px] flex items-center justify-between rounded-full px-4"
+                class="bg-white w-full md:w-[320px] h-[100px] flex items-center justify-between rounded-full px-4"
                 style="box-shadow: 10px 30px 50px 0px #0000000d">
                 <div class="flex items-center gap-4">
                   <div
@@ -271,7 +272,7 @@
             </div>
           </section>
 
-          <section class="py-20 px-36">
+          <section class="px-4 py-20 md:px-36">
             <div
               class="container flex flex-col items-center gap-8 px-4 mx-auto lg:flex-row">
               <div class="flex flex-col gap-6 pr-14 lg:w-1/2">
@@ -280,7 +281,7 @@
                 </div>
 
                 <h1
-                  class="text-[19.4px] font-medium leading-[29.1px] tracking-widest title-text">
+                  class="text-[19.4px] font-medium leading-[29.1px] tracking-widest text-title">
                   WHO ARE WE
                 </h1>
 
@@ -298,7 +299,7 @@
                 </p>
 
                 <div
-                  class="bg-white w-[400px] h-[131px] flex items-center justify-between px-4 border border-white rounded-[30px]"
+                  class="bg-white w-full md:w-[400px] h-[131px] flex items-center justify-between px-4 border border-white rounded-[30px]"
                   style="box-shadow: 10px 30px 50px 0px #0000000d">
                   <div class="flex items-center gap-4 mx-5">
                     <div class="w-12">
@@ -317,7 +318,7 @@
                   </div>
                 </div>
                 <div
-                  class="bg-white w-[400px] h-[131px] flex items-center justify-between px-4 border border-white rounded-[30px]"
+                  class="bg-white w-full md:w-[400px] h-[131px] flex items-center justify-between px-4 border border-white rounded-[30px]"
                   style="box-shadow: 10px 30px 50px 0px #0000000d">
                   <div class="flex items-center gap-4 mx-5">
                     <div class="w-12">
@@ -364,7 +365,7 @@
                 </div>
 
                 <h1
-                  class="text-[19.4px] font-medium leading-[29.1px] tracking-widest title-text">
+                  class="text-[19.4px] font-medium leading-[29.1px] tracking-widest text-title">
                   CHECKOUT OUR NEW
                 </h1>
 
@@ -601,7 +602,7 @@
                   class="w-[100px] h-[100px] top-[978px] left-[36px] bg-gradient-to-b from-[#4361EE] to-[rgba(67,97,238,0)] opacity-50 rounded-full absolute transform rotate-[330deg]">
                 </div>
                 <h1
-                  class="text-[19.4px] font-medium leading-[29.1px] tracking-widest title-text">
+                  class="text-[19.4px] font-medium leading-[29.1px] tracking-widest text-title">
                   TESTIMONIALS
                 </h1>
                 <h2
